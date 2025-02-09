@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f9f9f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Details :"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Pet Information Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pet Information:"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/text_pet_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: \nType: \nBreed: \nAge: \nGender: \nColor: \nAggression Level: "
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="16dp"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:textColor="#555555" />
+
+        <!-- Owner Information Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Owner Information:"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:id="@+id/text_owner_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Name: \nContact: \nEmail: \nEmergency Contact: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:layout_margin="4dp"
+            android:elevation="2dp"
+            android:textColor="#555555" />
+
+        <!-- Booking Dates Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Date Information:"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:id="@+id/text_check_in_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Check-in Date: "
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/text_check_out_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Check-out Date: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#555555" />
+
+        <!-- Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit_information"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Edit Information"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@drawable/buttonedt"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit_to_database"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/buttondatabase"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

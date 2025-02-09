@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <!-- First Card -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:text="Pet Gallery Info" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/left_image1"
+                    android:layout_width="138dp"
+                    android:layout_height="141dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="31dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/husky" />
+
+
+                <TextView
+                    android:id="@+id/right_description1"
+                    android:layout_width="157dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_toEndOf="@id/left_image1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Fluffy dog with striking eyes and a wolf-like look. They are friendly, playful, and full of energy."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_toEndOf="@id/left_image1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Husky Siberian"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Second Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/left_image2"
+                    android:layout_width="138dp"
+                    android:layout_height="141dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="31dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cogi" />
+
+
+                <TextView
+                    android:id="@+id/right_description2"
+                    android:layout_width="157dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_toEndOf="@id/left_image2"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="athletic, and lively little herder who is affectionate and companionable without being needy."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_toEndOf="@id/left_image2"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Corgi Wales"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Third Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/left_image3"
+                    android:layout_width="138dp"
+                    android:layout_height="141dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="31dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/garfield" />
+
+
+                <TextView
+                    android:id="@+id/right_description3"
+                    android:layout_width="157dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_toEndOf="@id/left_image3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="lazy, fat, cynical and self-absorbed orange tabby Persian cat."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_toEndOf="@id/left_image3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Garfield"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/left_image4"
+                    android:layout_width="138dp"
+                    android:layout_height="141dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="31dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/grumpycat" />
+
+
+                <TextView
+                    android:id="@+id/right_description4"
+                    android:layout_width="157dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_toEndOf="@id/left_image4"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="small, adorable cat famous for her permanent frown, making her an internet sensation."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_toEndOf="@id/left_image4"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Grumpy Cat"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/left_image5"
+                    android:layout_width="138dp"
+                    android:layout_height="141dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="31dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pitbull" />
+
+
+                <TextView
+                    android:id="@+id/right_description5"
+                    android:layout_width="157dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="64dp"
+                    android:layout_toEndOf="@id/left_image5"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="a muscular, medium-sized dog known for its strength and loyalty. They are friendly, energetic, and intelligent, with a strong bond to their families."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_toEndOf="@id/left_image5"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Pitbull terrier"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,158 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for Owner Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Owner's Information"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#333" />
+
+        <!-- Owner's Name -->
+
+        <!-- Gender Radio Group -->
+        <EditText
+            android:id="@+id/et_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Owner's Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <RadioGroup
+            android:id="@+id/gender_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <!-- Contact Number -->
+        <EditText
+            android:id="@+id/et_owner_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Contact Number" />
+
+        <!-- Email Address -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Email" />
+
+        <!-- Emergency Contact -->
+        <EditText
+            android:id="@+id/emergency_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Emergency Contact" />
+
+        <!-- Remarks -->
+        <EditText
+            android:id="@+id/remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Remarks" />
+
+        <!-- Check-In Date -->
+        <EditText
+            android:id="@+id/check_in_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Check-In Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+
+        <!-- Check-Out Date -->
+        <EditText
+            android:id="@+id/check_out_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Check-Out Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

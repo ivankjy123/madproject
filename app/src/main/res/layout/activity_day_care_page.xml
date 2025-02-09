@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Daycare System"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:width="250dp"
+        android:onClick="btnRegisterP"
+        android:layout_gravity="center_horizontal"
+        android:text="Register Pet Details" />
+
+    <Button
+        android:id="@+id/btn_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:width="250dp"
+        android:onClick="btnModifyP"
+        android:layout_gravity="center_horizontal"
+        android:text="Modify Pet Details"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnPetList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:width="250dp"
+        android:onClick="btnPetList"
+        android:layout_gravity="center_horizontal"
+        android:text="Pet Lists"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

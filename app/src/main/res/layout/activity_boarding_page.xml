@@ -1,0 +1,134 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:src="@drawable/cat_dog"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/hero_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Our Pet Boarding!"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/hero_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Your pet's favorite home away from home -"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:textColor="#666" />
+
+
+        <TextView
+            android:id="@+id/services_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Services"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:textColor="#333" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:src="@drawable/petdaycare"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cozy Accommodations"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+                        android:textColor="#333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comfortable spaces for your pets to relax and play."
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="#666" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/testimonials_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Right Now !"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:textColor="#333" />
+
+
+        <Button
+            android:id="@+id/book_now_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:width="200dp"
+            android:background="@drawable/border"
+            android:onClick="btnBook"
+            android:text="Book Now"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

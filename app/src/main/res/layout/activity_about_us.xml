@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#333333" />
+
+        <!-- Introductory Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to AIYH PET CARE CO! We provide loving, safe, and professional pet boarding and daycare services. Your furry friends are in good hands with us!"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16dp"
+            android:lineSpacingExtra="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <!-- Image Section -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pet_facility"
+            android:scaleType="centerCrop"
+            android:contentDescription="Image of the facility"
+            android:layout_marginBottom="16dp"
+            android:background="#E0E0E0" />
+
+        <!-- Additional Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Services :"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Daycare for pets to keep them engaged and happy.\n• Boarding facilities with round-the-clock care.\n• Professional staff who treat your pets like family."
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+
+        <!-- Google Map Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Us:"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#333333" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <!-- Contact Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us:"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: 04-877 0137\nEmail: AIYH@yourdaycare.com\nAddress: 45, Jalan Austin Height 8/1, Taman Mount Austin, 81100\n\n"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="16dp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp"
+            android:textColor="#555555" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pet Care Co-op</string>
+    <string-array name="pet_types">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Other</item>
+    </string-array>
+</resources>

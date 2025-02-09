@@ -1,0 +1,142 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Pet Information Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Information :"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/et_pet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:hint="Pet Name" />
+
+        <EditText
+            android:id="@+id/edit_pet_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type of Pet (Dog, Cat, etc.)"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/edit_pet_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Breed"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_pet_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_pet_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Color/Markings"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border"
+            android:drawableTint="#d0d0d0"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Aggressive" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aggressive Towards Other Animals" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aggressive Towards People" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
